@@ -3,9 +3,10 @@ Una app vulnerable para pruebas
 
 
 ## Instalación
-Cloanr el repo
+Clonar el repo
 
 crear la imagen de docker
+
 ```sudo docker build -t myapp --network=host .```
 
 Ejecutar el contenedor
