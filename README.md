@@ -9,7 +9,7 @@ Clonar el repo
 
 crear la imagen de docker
 
-```sudo docker build -t myapp --network=host .```
+```docker build -t myapp --network=host .```
 
 Ejecutar el contenedor
 
