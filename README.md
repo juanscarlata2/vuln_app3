@@ -5,6 +5,8 @@ Una app vulnerable para pruebas
 ## Instalación
 Clonar el repo
 
+```cd vuln_app3/app/```
+
 crear la imagen de docker
 
 ```sudo docker build -t myapp --network=host .```
