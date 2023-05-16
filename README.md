@@ -1,2 +1,13 @@
 # vuln_app3
-a simple test
+Una app vulnerable para pruebas
+
+
+## Instalación
+Cloanr el repo
+
+crear la imagen de docker
+```sudo docker build -t myapp --network=host .```
+
+Ejecutar el contenedor
+
+```docker run -p 5000:5000 myapp```
