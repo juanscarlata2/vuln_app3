@@ -15,6 +15,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY flag.txt ./
 RUN chmod 444 flag.txt
 
+# Establecer la variable de entorno FLASK_ENV en "production"
+ENV FLASK_ENV=production
+
 # Crea un usuario no root para ejecutar la aplicación
 RUN useradd -m webu
 USER webu
@@ -23,5 +26,4 @@ USER webu
 EXPOSE 5000
 
 # Ejecuta la aplicación Flask cuando el contenedor se inicie
-ENV FLASK_ENV=production
 CMD [ "python", "app.py" ]
