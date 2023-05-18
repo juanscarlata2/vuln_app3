@@ -72,7 +72,7 @@ def temperature():
     <html>
     <head>
         <title>Temperature</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="css/bulma.min.css">
         {style}
     </head>
     <body>
