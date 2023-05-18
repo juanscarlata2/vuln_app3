@@ -3,7 +3,6 @@ from functools import wraps
 
 app = Flask(__name__)
 app.secret_key = 'HASHjghg23565!!9787861209jhakskh'
-app.run(host='0.0.0.0')
 
 # Decorator function to check if user is logged in
 def login_required(f):
