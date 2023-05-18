@@ -5,18 +5,14 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copia los archivos requeridos al directorio de trabajo
-COPY requirements.txt ./
-COPY app.py ./
+COPY . /app
+
 
 # Instala las dependencias de la aplicación
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia el archivo flag.txt y establece los permisos de lectura
-COPY flag.txt ./
 RUN chmod 444 flag.txt
-
-# Establecer la variable de entorno FLASK_ENV en "production"
-ENV FLASK_ENV=production
 
 # Crea un usuario no root para ejecutar la aplicación
 RUN useradd -m webu
