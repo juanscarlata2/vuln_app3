@@ -73,7 +73,7 @@ def temperature():
     <html>
     <head>
         <title>Temperature</title>
-        <link rel=link rel="stylesheet" href="{static_ref}">
+        <link rel="stylesheet" href="{static_ref}">
         {style}
     </head>
     <body>
