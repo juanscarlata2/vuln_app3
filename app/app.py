@@ -56,6 +56,7 @@ def temperature():
         server='s1'
     # Get the temperature data
     temperature_data, server_name = get_temperature(server)
+    static_ref=url_for('static', filename='css/bulma.min.css' )
     style='''
     <style>
         body {
@@ -73,7 +74,7 @@ def temperature():
     <html>
     <head>
         <title>Temperature</title>
-        <link rel="stylesheet" href="css/bulma.min.css">
+        <link rel="{static_ref}">
         {style}
     </head>
     <body>
